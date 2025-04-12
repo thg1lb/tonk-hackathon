@@ -1,0 +1,7 @@
+{
+  "name": "hackathon",
+  "plan": {
+    "description": "task manager for friends/family"
+  },
+  "template": "react"
+}

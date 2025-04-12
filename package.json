@@ -1,0 +1,36 @@
+{
+  "name": "tonk",
+  "version": "1.0.0",
+  "description": "Tonk is the copilot-friendly toolchain that gives independent developers freedom to build powerful shared software.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonk-labs/tonk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tonk-labs/tonk/issues"
+  },
+  "homepage": "https://github.com/tonk-labs/tonk#readme",
+  "dependencies": {
+    "@automerge/automerge": "^2.2.8",
+    "chalk": "^5.4.1",
+    "express": "^5.1.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "electron": "^35.1.5"
+  }
+}
