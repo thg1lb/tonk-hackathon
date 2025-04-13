@@ -1,6 +1,6 @@
 # Encode AI Hackathon 2025 Submission - Tonk Toolchain App "Ranked Chores"
 
-Our two-person team created a task manager app that utilizes a shared datastore for "mini-apps" within the app. This app includes a task manager, leaderboard, and chatroom, making it suitable for friends looking to make joint tasks more fun, or perhaps roommates looking to optimize their chore system.
+Our two-person team created a task manager app that utilizes a shared datastore for "mini-apps" within the app. This app includes a task manager, leaderboard, and chatroom, making it suitable for friends looking to make joint tasks more fun, or perhaps roommates looking to optimize their chore system. The app can be used via Tonk, and also accessed through the following link: https://rnode-82-163-218-33.a.free.pinggy.link/
 
 # Usage (a more generic description)
 
