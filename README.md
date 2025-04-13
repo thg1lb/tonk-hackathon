@@ -1,92 +1,43 @@
-# Build your own little internet with Tonk
+# Encode AI Hackathon 2025 Submission - Tonk Toolchain App "Ranked Chores"
 
-Tonk is the copilot-friendly toolchain that gives independent developers freedom to build powerful shared software.
+Our two-person team created a task manager app that utilizes a shared datastore for "mini-apps" within the app. This app includes a task manager, leaderboard, and chatroom, making it suitable for friends looking to make joint tasks more fun, or perhaps roommates looking to optimize their chore system.
 
-You can use the Tonk toolchain to:
+# Usage (a more generic description)
 
-- Build applications within a copilot-friendly framework
-- Manage complex state interoperable across people and apps
-- Publish and share your apps
+This tonk application allows you to set tasks, view tasks and mark tasks as completed.
 
-## Get Started
+You can assign different people tasks and assign these tasks with a rating -- some tasks have higher points than others, and other tasks have less points.
 
-Start building apps and integrations with [our documentation](https://tonk-labs.github.io/tonk/introduction.html).
+There is also a leaderboard funtion which allows for easy tracking of the progress of each user -- it also allows you to help motivate your workers by maybe encouraging the giving of prizes for the top performers.
 
-## Project Status
+## Approach
 
-- **Local-First Architecture**: Built on Automerge for conflict-free data synchronization.
-- **Quick Start**: Create new projects instantly with `tonk create`.
-- **Offline Support**: IndexedDB-based storage auto syncs when connectivity resumes.
-- **Privacy Focused**: Keeps user data local by default.
-- **React + TypeScript**: Modern development stack with full type safety.
-- **Tailwind CSS**: Utility-first styling out of the box.
-- **Package and Share**: Easily deploy and share your Tonk apps (work in progress).
+As per the Tonk documentation, we decided to almost entirely vibe-code the app. This was both of our first time using AI-integrated IDE software (we chose to use Windsurf), so it was a bit of a learning curve to understand how to approach making the app. We followed the tonk download guide off of the documentation, but ran into many issues with dependencies and trying to download it on Windows 11. This was largely fixed upon manually downloading the dependencies listed in errors. 
 
-As an early stage project we are very open to feedback and keen to help builders - so please reach out to the team and we will endeavour to support your usecase.
+Creating the app within tonk was quite easy, and we pulled it into the IDE to begin vibe-coding shortly after. We had used Claude 3.5 Sonnet, but later switched to using Deepseek V3.
 
-## Links
-
-- [Docs](https://tonk-labs.github.io/tonk/introduction.html)
-- [Website](https://tonk.xyz)  
-- [GitHub](https://github.com/tonk-labs/tonk)  
-- [Community](https://t.me/+9W-4wDR9RcM2NWZk)
-
-## Hackathon ideas
-
-Learning Tonk requires a mindset shift because as developers we're used to thinking in terms of singular applications that are tightly coupled to databases.
-
-Tonk doesn't just help you build apps or store data. Tonk can be best described as helping you build **your own little internet: a way to store shared highly mutable state across many apps and many users, and build ephemeral services, apps and tools on top of that shared state.**
-
-![illustrative-example](https://github.com/user-attachments/assets/5f15dd6b-8d49-4ea1-a328-3b43d7abecd4)
+![image](https://github.com/user-attachments/assets/7b481953-9192-4472-9e65-b7317b6802da)
+![image](https://github.com/user-attachments/assets/94a7539a-bb42-404e-bcf9-20ab02d8558d)
 
 
-Each app can read and write to the shared state with barely any development overhead - no need to worry about migrations, caching, auth or permissions.
+## Project Development
 
-Here are some examples of what Tonk can help with:
+We both have very little experience with the web-based languages and frameworks that Tonk relies on, so we relied heavily upon vibe-coding for syntax and language support. Structurally we understood that we needed some kind of main app, with sub-apps operating from one shared datastore. 
 
-### 🗺️ Maps
-
-An evolving dataset for your friends to add locations, routes, reviews, planned trips - and surface whatever you like in custom maps apps.
-
-*Hackathon idea:* A social mapping app where friends can collaboratively pin spots, share routes, and plan trips—with the option to remix the shared dataset into custom experiences like foodie maps, hiking guides, or road trip planners.
-
-### 🎯 Productivity
-
-A fluctuating set of todos for your colleagues to track progress on ephemeral projects without forcing everyone to use the same productivity app.
-
-*Hackathon idea:* A multiplayer to-do list for temporary teams - where shared project tasks live in a public space and AI nudges contributors to focus on what matters before the project dissolves.
-
-### 💰 Banking
-
-Aggregated financial information for your household to track your finances and make intelligent investments.
-
-*Hackathon idea:* A household finance dashboard that syncs every member’s bank accounts, applies AI to optimize spending, and auto-generates investment proposals based on shared goals.
-
-### ❤️ Health
-
-A dataset for your family to make health data available to bespoke meditation, exercise or sleep apps.
-
-*Hackathon idea:* A health data layer for families — syncing sleep, steps, and stress scores across devices and enabling personalized wellness bots that work across meditation, exercise, and diet apps.
-
-### 💬 Social
-
-An ad-free, private chatboard for your friends, but where everyone customises their experience with pluggable components such as games, calendars and notifications.
-
-*Hackathon idea:* A modular group chat app where every conversation is a programmable space - friends can add shared games, calendars, polls, or moodboards, and the feed adapts to how your group vibes, not how the algorithm dictates.
-
-### 🤖 Assistants
-
-An AI that can assist you with full context from your chat apps, calendars, todo boards and social feeds.
-
-*Hackathon idea:* A privacy-first AI assistant that reads your calendar, chat threads, and todos from your shared spaces — then recommends actions, summarizes life, and shares updates with your friends.
+![image](https://github.com/user-attachments/assets/fef65cc7-198a-4e9d-b655-8bf04d0c8411)
+![image](https://github.com/user-attachments/assets/008d96bb-f51c-4a33-a6ae-8c5472b71ffa)
+![image](https://github.com/user-attachments/assets/b1637d25-147c-4734-9e3a-18d1f87ba8bc)
+![image](https://github.com/user-attachments/assets/fd051d94-e09a-4282-a1f5-94765ce52867)
 
 
-## License
+## Errors and Initial Issues
 
-Simplicity and freedom.
+We had several iterations of the app that had been made but were messed up due to wrong prompts and issues with implementing ideas. One idea that was largely scrapped was the idea of a map where tasks could be seen overlayed on a map embedded in the app. Another idea was a P2P connection established using user-IDs. However, the implementation was not working well and in the end we simplified the app in order to prioritize workability over more features. Some screenshots of old versions can be found below. One of them can be found in the github branches if you'd like to see it more in detail. (if you'd like to see videos of previous versions we can also supply those)
 
-MIT © Tonk
+![image](https://github.com/user-attachments/assets/1c2e31f8-7708-4184-b439-e57622df157f)
+![image](https://github.com/user-attachments/assets/1afb392b-a88f-42e2-94d3-81cce30c3422)
+![image](https://github.com/user-attachments/assets/6683e50a-9bf5-441d-a814-8903ffb10e8b)
+![image](https://github.com/user-attachments/assets/e5d0d3aa-b41b-4f50-b4e6-9debe026626f)
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/43586bd7-189e-4f4f-8196-ebe006beb115" />
-</p>
+
+
