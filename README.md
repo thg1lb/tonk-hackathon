@@ -8,7 +8,7 @@ This tonk application allows you to set tasks, view tasks and mark tasks as comp
 
 You can assign different people tasks and assign these tasks with a rating -- some tasks have higher points than others, and other tasks have less points.
 
-There is also a leaderboard funtion which allows for easy tracking of the progress of each user -- it also allows you to help motivate your workers by maybe encouraging the giving of prizes for the top performers.
+There is also a leaderboard funtion which allows for easy tracking of the progress of each user -- it also motivates your friends/family/roommates by encouraging the giving of prizes for the top performers.
 
 ## Approach
 
