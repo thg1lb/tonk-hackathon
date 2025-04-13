@@ -1,0 +1,7 @@
+{
+  "name": "tasks-game",
+  "plan": {
+    "description": "a task manager for friends that has a leaderboard and map with locations of all of the tasks (as three different sub-appspnpm run build && echo \"___TONK_CMD_FINISHED_1\")"
+  },
+  "template": "react"
+}

@@ -76,7 +76,7 @@ export const useChatStore = create<ChatState>(
       },
     }),
     {
-      docId: "family-chat"
+      docId: "family-app"
     }
   )
 );

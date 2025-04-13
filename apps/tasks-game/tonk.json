@@ -1,0 +1,6 @@
+{
+  "$schema": "https://tonk.sh/schema/v1/tonk.json",
+  "port": 8080,
+  "entry": "/src/index.tsx",
+  "publicDir": "public"
+}

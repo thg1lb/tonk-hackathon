@@ -1,0 +1,7 @@
+{
+  "name": "task-manager",
+  "plan": {
+    "description": "make me a task manager with multiple tabs including a map, chatroom, and user/task assignment , as well as a leaderboard (pokemon go style)"
+  },
+  "template": "react"
+}
