@@ -1,5 +1,6 @@
 {
   "name": "hackathon",
+  "displayName": "Task Manager",
   "version": "0.1.0",
   "description": "A Tonk application",
   "type": "module",
